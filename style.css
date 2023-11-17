@@ -1,0 +1,97 @@
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7FF;
+    color: #333;
+    overflow-x: hidden; 
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+}
+
+.title-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #031926;
+    color: #fff;
+    z-index: 20;
+}
+
+.taskbar {
+    background-color: #031926;
+    height: 9vh;
+    color: #fff;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 100%;
+    z-index: 4;
+}
+
+.title-page h1 {
+    font-size: 7em;
+}
+
+h1 {
+    color: #fff;
+    margin: 0;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    color: #020D12
+}
+
+nav {
+    position: relative;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.text-section {
+    margin-top: 10vh;
+    padding-left: 200px;
+}
+
+.image-section {
+    margin-top: 10vh;
+    padding: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #031926;
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+}

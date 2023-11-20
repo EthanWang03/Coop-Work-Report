@@ -27,11 +27,12 @@ header {
     background-color: #031926;
     height: 9vh;
     color: #fff;
-    padding: 1em;
+    padding: 1rem;
     position: fixed;
     width: 100%;
     top: 100%;
     z-index: 4;
+    font-size: 1.1em;
 }
 
 .title-page h1 {
@@ -40,15 +41,15 @@ header {
 
 h1 {
     color: #fff;
-    margin: 0;
-    padding: 80px 0;
+    margin: 2rem 0;
     text-align: center;
     position: relative;
     z-index: 1;
 }
 
 h2 {
-    color: #020D12
+    color: #020D12;
+    font-size: 3em;
 }
 
 nav {
@@ -69,22 +70,26 @@ nav a {
 .content-grid {
     display: grid;
     grid-template-columns: 2fr 1fr; 
-    max-width: 90%;
+    border: 2px solid #020D12 ;
+    max-width: 80%;
     margin: 20px auto;
 }
 
 .text-section {
+    border-right: 2px solid #020D12;
     margin-top: 10vh;
-    padding-left: 200px;
+    padding-left: 20px;
 }
 
 .image-section {
+    border-right: 2px solid #ccc;
     margin-top: 10vh;
     padding: 20px;
 }
 
 p {
     line-height: 1.6;
+    font-size: 1.1em;
 }
 
 footer {

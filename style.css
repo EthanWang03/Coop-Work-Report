@@ -19,20 +19,26 @@ header {
     justify-content: center;
     text-align: center;
     background-color: #031926;
-    color: #fff;
+    color: #F7F7FF;
     z-index: 20;
 }
 
 .taskbar {
     background-color: #031926;
-    height: 9vh;
-    color: #fff;
+    color: #F7F7FF;
     padding: 1rem;
     position: fixed;
     width: 100%;
-    top: 100%;
+    top: -20%;
     z-index: 4;
-    font-size: 1.1em;
+    font-size: 1.2em;
+}
+
+.taskbar a {
+    margin: 0 1.4rem;
+    text-decoration: none;
+    color: #F7F7FF;
+    font-weight: bold;
 }
 
 .title-page h1 {
@@ -62,29 +68,26 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 0.5em;
     font-weight: bold;
     cursor: pointer;
 }
 
-.content-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr; 
-    border: 2px solid #020D12 ;
-    max-width: 80%;
-    margin: 20px auto;
+.content {
+    margin-top: 10vh;
 }
 
-.text-section {
-    border-right: 2px solid #020D12;
-    margin-top: 10vh;
-    padding-left: 20px;
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
 }
-
-.image-section {
-    border-right: 2px solid #ccc;
-    margin-top: 10vh;
-    padding: 20px;
+@media (min-width: 1025px) {
+    .container {
+        max-width: 976px;
+        padding: 32px 0;
+        margin: auto;
+    }
 }
 
 p {

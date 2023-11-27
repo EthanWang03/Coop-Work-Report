@@ -2,7 +2,7 @@ function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
 
     if (section) {
-        const offset = 140;
+        const offset = 60;
 
         const sectionTop = section.offsetTop - offset;
 
@@ -16,7 +16,7 @@ function scrollToSection(sectionId) {
 document.addEventListener('DOMContentLoaded', function() {
     const taskbar = document.querySelector('.taskbar');
     const titlePage = document.querySelector('.title-page');
-    const titlePageHeight = titlePage.offsetHeight;
+    const titlePageHeight = titlePage.offsetHeight - 20;
 
     window.addEventListener('scroll', function() {
         const scrollPosition = window.scrollY;

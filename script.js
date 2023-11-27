@@ -2,7 +2,7 @@ function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
 
     if (section) {
-        const offset = 60;
+        const offset = 120;
 
         const sectionTop = section.offsetTop - offset;
 

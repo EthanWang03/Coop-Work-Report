@@ -19,7 +19,6 @@ header {
     justify-content: center;
     text-align: center;
     background-color: #031926;
-    color: #F7F7FF;
     z-index: 20;
 }
 
@@ -46,7 +45,7 @@ header {
 }
 
 h1 {
-    color: #fff;
+    color: #F7F7FF;
     margin: 2rem 0;
     text-align: center;
     position: relative;
@@ -74,18 +73,17 @@ nav a {
 }
 
 .content {
-    margin-top: 10vh;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    padding: 32px;
 }
 @media (min-width: 1025px) {
     .container {
         max-width: 976px;
-        padding: 32px 0;
         margin: auto;
     }
 }

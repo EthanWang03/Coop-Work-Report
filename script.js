@@ -16,7 +16,7 @@ function scrollToSection(sectionId) {
 document.addEventListener('DOMContentLoaded', function() {
     const taskbar = document.querySelector('.taskbar');
     const titlePage = document.querySelector('.title-page');
-    const titlePageHeight = titlePage.offsetHeight - 20;
+    const titlePageHeight = titlePage.offsetHeight;
 
     window.addEventListener('scroll', function() {
         const scrollPosition = window.scrollY;

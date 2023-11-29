@@ -7,19 +7,29 @@ body, html {
     overflow-x: hidden; 
 }
 
-header {
-    text-align: center;
-    padding: 1em;
-}
-
 .title-page {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     background-color: #031926;
-    z-index: 20;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+header.title-page h1 {
+    text-align: center;
+    margin: auto;
+}
+
+header.title-page i {
+    color: #F7F7FF;
+    font-size: 2rem;
+    width: 1em;
+    margin-top: 80vh;
+    position: absolute;
+    cursor: pointer;
 }
 
 .taskbar {
@@ -46,7 +56,6 @@ header {
 
 h1 {
     color: #F7F7FF;
-    margin: 2rem 0;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -63,6 +72,13 @@ h3 {
 }
 
 h4 {
+    margin-top: 0;
+    color: #031926;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+h5 {
     color: #031926;
     font-size: 1em;
     font-weight: normal;
@@ -120,7 +136,11 @@ footer {
     text-align: center;
     padding: 1em;
     background-color: #031926;
-    color: #fff;
+    color: #F7F7FF;
     width: 100%;
     bottom: 0;
+}
+
+footer p {
+    color: #F7F7FF;
 }

@@ -30,3 +30,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollIcon = document.getElementById('arrow-icon');
+
+    scrollIcon.addEventListener('click', function() {
+        window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth'
+        });
+    });
+});

@@ -35,12 +35,19 @@ header.title-page i {
 .taskbar {
     background-color: #031926;
     color: #F7F7FF;
-    padding: 1rem;
     position: fixed;
     width: 100%;
     top: 100%;
     z-index: 4;
     font-size: 1.2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .taskbar {
+        display: none;
+    }
 }
 
 .taskbar a {
@@ -48,6 +55,10 @@ header.title-page i {
     text-decoration: none;
     color: #F7F7FF;
     font-weight: bold;
+}
+
+.taskbar a:hover {
+    color: #748CAB;
 }
 
 .title-page h1 {
@@ -139,8 +150,22 @@ footer {
     color: #F7F7FF;
     width: 100%;
     bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer p {
     color: #F7F7FF;
+}
+
+footer a {
+    color: #F7F7FF;
+    line-height: 1.6;
+    font-size: 1.1em;
+    padding-left: 5px;
+}
+
+footer a:hover {
+    color: #748CAB;
 }

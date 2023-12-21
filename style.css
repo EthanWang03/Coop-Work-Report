@@ -32,6 +32,10 @@ header.title-page i {
     cursor: pointer;
 }
 
+header.title-page i:hover{
+    color: #748CAB;
+}
+
 .taskbar {
     background-color: #031926;
     color: #F7F7FF;
